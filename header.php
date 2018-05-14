@@ -9,19 +9,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <a class="navbar-brand" href="index.php">IdleRPG</a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.php">Game Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="players.php">Player Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="worldmap.php">World Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="questinfo.php">Quest Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
+        </li>
+      </ul>
+    </nav>
 
-    <!-- Idle RPG Logo -->
-
-    <div class="head">
 <?php
-    echo('        <img src="'. $irpg_logo .'" alt="'. $irpg_chan .' Idle RPG" title="'. $irpg_chan .' Idle RPG" width="338" height="115" />');
-?>
-    </div>
-
-    <div id="menu" class="menu">
-
-<?php
-    $topbarurl = array(
+    /*$topbarurl = array(
         'Game Info' => $BASEURL . 'index.php',
         'Player Info' => $BASEURL . 'players.php',
         'World Map' => $BASEURL . 'worldmap.php',
@@ -41,8 +54,7 @@
         else {
             echo "        <a href=\"$value\">$key</a>\n";
         }
-    }
+    }*/
 ?>
-    </div>
 
     <div class="content">
