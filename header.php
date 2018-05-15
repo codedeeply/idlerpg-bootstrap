@@ -13,43 +13,43 @@
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-            <a class="navbar-brand" href="index.php">IdleRPG</a>
+                <a class="navbar-brand" href="index.php">IdleRPG</a>
 
-    </div>
-
-    <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.php">Game Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="players.php">Player Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="worldmap.php">World Map</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="quest.php">Quest Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.php">Game Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="players.php">Player Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="worldmap.php">World Map</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="quest.php">Quest Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
 <?php
     /*$topbarurl = array(
