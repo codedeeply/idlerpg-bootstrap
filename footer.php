@@ -1,8 +1,8 @@
     </main>
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
         <p>Questions? Comments? Suggestions? Bugs? Naked pics?
-        <!--<a href="contact.php">Send an email</a> or --><?php print $admin_nick?>@IRC.
+        <?php print $admin_nick?>@IRC.
         <?php
           $hits = file("hits.db");
           $fp = fopen("hits.db", "w");
@@ -30,7 +30,7 @@
         ?>
         </p>
       </div>
-    </footer>
+    </footer>-->
     <script language="javascript" src="script.js"></script>
   </body>
 </html>
