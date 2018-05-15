@@ -214,7 +214,7 @@
       $pentot = 0;
       foreach ($pen as $k => $v) $pentot += $v;
       echo "      <tr>\n".
-           "        <td nowrap>$user</td>\n".
+           "        <td class='headcol' nowrap>$user</td>\n".
            "        <td>$level</td>\n".
            "        <td>".($isadmin?"Yes":"No")."</td>\n".
            "        <td nowrap>$class</td>\n".
