@@ -14,145 +14,176 @@
       </div>
     </div>
 
-    <h2>Location</h2>
-    <p> 
-      The Idle RPG can be played on the
-      <a href="irc://irc.mibbit.net:6667/irpg">Mibbit IRC Network</a> in the
-      channel #irpg.
-    </p>
-    
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Location</h2>
+        <p> 
+          The Idle RPG can be played on the
+          <a href="irc://irc.mibbit.net:6667/irpg">Mibbit IRC Network</a> in the
+          channel #irpg.
+        </p>
+      </div>
+    </div>
 
-    <h2>Registering</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Registering</h2>
+        
+          <p>To register, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> REGISTER &lt;char name&gt; &lt;password&gt;
+              &lt;char class&gt;
+            </code>
+          
+          <p>Where 'char name' can be up to 16 chars long, 'password' can be up
+          to 8 characters, and 'char class' can be up to 30 chars.</p>
+      </div>
+    </div>
     
-      <p>To register, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> REGISTER &lt;char name&gt; &lt;password&gt;
-          &lt;char class&gt;
-        </code>
-      
-      <p>Where 'char name' can be up to 16 chars long, 'password' can be up
-      to 8 characters, and 'char class' can be up to 30 chars.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Logging In</h2>
+        
+          <p>To login, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> LOGIN &lt;char name&gt; &lt;password&gt;
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+      </div>
+    </div>
     
-
-    <h2>Logging In</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Logging Out</h2>
+        
+          <p>To logout, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> LOGOUT
+            </code>
+          
+          <p>This is a p20 (see <a href="#penalties">Penalties</a>) command.</p>
+      </div>
+    </div>
     
-      <p>To login, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> LOGIN &lt;char name&gt; &lt;password&gt;
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Changing Your Password</h2>
+        
+          <p>To change your password, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> NEWPASS &lt;new password&gt;
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+          <p>If you have forgotten your password, please use the <a href="#info">
+          INFO</a> command to find an online admin to help you. If your
+          administrator does not have the INFO command enabled, then just message
+          an op in the channel. They can probably help you.</p>
+      </div>
+    </div>
     
-
-    <h2>Logging Out</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Removing Your Account</h2>
+        
+          <p>To remove your account, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> REMOVEME
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.)</p>
+       </div>
+    </div>
     
-      <p>To logout, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> LOGOUT
-        </code>
-      
-      <p>This is a p20 (see <a href="#penalties">Penalties</a>) command.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Changing Your Alignment</h2>
+        
+          <p>To change your alignment, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> ALIGN &lt;good|neutral|evil&gt;
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+          <p>Your alignment can affect certain aspects of the game. You may align
+          with good, neutral, or evil. 'Good' users have a 10% boost to their item
+          sum for battles, and a 1/12 chance each day that they, along with a
+          'good' friend, will have the light of their god shine upon them,
+          accelerating them 5-12% toward their next level. 'Evil' users have a 10%
+          detriment to their item sum for battles (ever forsaken in their time of
+          most need...), but have a 1/8 chance each day that they will either a)
+          attempt to steal an item from a 'good' user (whom they cannot help but
+          hate) or b) be forsaken (for 1-5% of their TTL) by their evil god. After
+          all, we all know that crime doesn't pay. Also, 'good' users have only a
+          1/50 chance of landing a <a href="#critstrike">Critical Strike</a> when
+          battling, while 'evil' users (who always fight dirty) have a 1/20
+          chance. Neutral users haven't had anything changed, and all users start
+          off as neutral.</p>
+          <p>I haven't run the numbers to see which alignment it is better to
+          follow, so the stats for this feature may change in the future.</p>
+      </div>
+    </div>
     
-
-    <h2>Changing Your Password</h2>
-    
-      <p>To change your password, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> NEWPASS &lt;new password&gt;
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
-      <p>If you have forgotten your password, please use the <a href="#info">
-      INFO</a> command to find an online admin to help you. If your
-      administrator does not have the INFO command enabled, then just message
-      an op in the channel. They can probably help you.</p>
-    
-
-    <h2>Removing Your Account</h2>
-    
-      <p>To remove your account, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> REMOVEME
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command :^)</p>
-    
-
-    <h2>Changing Your Alignment</h2>
-    
-      <p>To change your alignment, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> ALIGN &lt;good|neutral|evil&gt;
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
-      <p>Your alignment can affect certain aspects of the game. You may align
-      with good, neutral, or evil. 'Good' users have a 10% boost to their item
-      sum for battles, and a 1/12 chance each day that they, along with a
-      'good' friend, will have the light of their god shine upon them,
-      accelerating them 5-12% toward their next level. 'Evil' users have a 10%
-      detriment to their item sum for battles (ever forsaken in their time of
-      most need...), but have a 1/8 chance each day that they will either a)
-      attempt to steal an item from a 'good' user (whom they cannot help but
-      hate) or b) be forsaken (for 1-5% of their TTL) by their evil god. After
-      all, we all know that crime doesn't pay. Also, 'good' users have only a
-      1/50 chance of landing a <a href="#critstrike">Critical Strike</a> when
-      battling, while 'evil' users (who always fight dirty) have a 1/20
-      chance. Neutral users haven't had anything changed, and all users start
-      off as neutral.</p>
-      <p>I haven't run the numbers to see which alignment it is better to
-      follow, so the stats for this feature may change in the future.</p>
-    
-    
-    <a name="info"></a><h2>Obtaining Bot Info</h2>
-    
-      <p>To see some simple information on the bot, simply:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> INFO
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
-      <p>This command gives info such as to which server the bot is connected
-      and the nicknames of online bot admins.</p>
-      <p>This command is optional, and may be disabled by your bot admin.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <a name="info"></a><h2>Obtaining Bot Info</h2>
+        
+          <p>To see some simple information on the bot, simply:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> INFO
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+          <p>This command gives info such as to which server the bot is connected
+          and the nicknames of online bot admins.</p>
+          <p>This command is optional, and may be disabled by your bot admin.</p>
+      </div>
+    </div>
     
     
-
-    <h2>Levelling</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Leveling</h2>
+        
+          <p>To gain levels, you must only be logged in and idle. The time
+          between levels is based on your character level, and is calculated
+          by the formula:</p>
+          
+            600*(1.16^YOUR_LEVEL)
+          
+          <p>Where ^ represents the exponentiation operator.</p>
+          <p>Very high levels are calculated differently as of version 3.0. Levels
+          after level 60 have a next time to level of:</p>
+          
+            (time to level @ 60) + ((1 day) * (level - 60))
+          
+          <p>The exponent method code had simply gotten to that point that levels
+          were taking too long to complete.</p>
+      </div>
+    </div>
     
-      <p>To gain levels, you must only be logged in and idle. The time
-      between levels is based on your character level, and is calculated
-      by the formula:</p>
-      
-        600*(1.16^YOUR_LEVEL)
-      
-      <p>Where ^ represents the exponentiation operator.</p>
-      <p>Very high levels are calculated differently as of version 3.0. Levels
-      after level 60 have a next time to level of:</p>
-      
-        (time to level @ 60) + ((1 day) * (level - 60))
-      
-      <p>The exponent method code had simply gotten to that point that levels
-      were taking too long to complete.</p>
-    
-
-    <h2>Checking the Active Quest</h2>
-    
-      <p>To see the active quest, its users, and its time left to
-      completion:</p>
-      
-        <code>
-          /msg <?php echo $irpg_bot;?> QUEST
-        </code>
-      
-      <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Checking the Active Quest</h2>
+        
+          <p>To see the active quest, its users, and its time left to
+          completion:</p>
+          
+            <code>
+              /msg <?php echo $irpg_bot;?> QUEST
+            </code>
+          
+          <p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+      </div>
+    </div>
     
 
     <h2>Checking Your Online Status</h2>
