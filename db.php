@@ -40,7 +40,7 @@
   <div class="table-responsive">
     <table class="table table-striped col-sm-12 table-bordered table-condensed" <?/*border=1 cellpadding=2 cellspacing=2 cols="32"*/?> rows="<?php print count($file); ?>">
       <tr>
-        <th NOWRAP>
+        <th NOWRAP class="headcol">
           User
           (<a href="db.php?sort=cmp_user_asc">
              <img src="up.png" border="0">
