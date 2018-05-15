@@ -26,9 +26,17 @@
 
         </div>
 
+        <?php
+          $current_url = basename($_SERVER['PHP_SELF']);
+          echo "<p>" . $current_url . "</p>";
+          $active = "class=\"active\"";
+        ?>
+
+
+
         <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li class="nav-item">
+                  <li <?php echo ($current_url == "index.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="index.php">Game Info</a>
                   </li>
                   <li class="nav-item">
