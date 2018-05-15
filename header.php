@@ -22,7 +22,7 @@
           <a class="nav-link" href="worldmap.php">World Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="questinfo.php">Quest Info</a>
+          <a class="nav-link disabled" href="quest.php">Quest Info</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
