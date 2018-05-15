@@ -40,7 +40,7 @@
   <div class="table-responsive">
     <table class="table table-striped col-sm-12 table-bordered table-condensed" rows="<?php print count($file); ?>">
       <tr>
-        <th NOWRAP class="headcol">
+        <th NOWRAP>
           User
           (<a href="db.php?sort=cmp_user_asc">
              <img src="up.png" border="0">
@@ -214,7 +214,7 @@
       $pentot = 0;
       foreach ($pen as $k => $v) $pentot += $v;
       echo "      <tr>\n".
-           "        <td class='headcol' nowrap>$user</td>\n".
+           "        <td nowrap>$user</td>\n".
            "        <td>$level</td>\n".
            "        <td>".($isadmin?"Yes":"No")."</td>\n".
            "        <td nowrap>$class</td>\n".
