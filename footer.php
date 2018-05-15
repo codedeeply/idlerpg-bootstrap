@@ -31,5 +31,6 @@
 
         </p>
     </div>
+    <script language="javascript" src="script.js"></script>
   </body>
 </html>
