@@ -24,7 +24,7 @@
 
     <div id="navbar" class="navbar-collapse collapse">
       <a class="navbar-brand" href="index.php">IdleRPG</a>
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="index.php">Game Info</a>
               </li>
