@@ -3,12 +3,16 @@
     $irpg_page_title = "Game Info";
     include("header.php");
 ?>
-    <h1>Game Info</h1>
-    <p>The Idle RPG is just what it sounds like: an RPG in which the players
-    idle. In addition to merely gaining levels, players can find items and
-    battle other players. However, this is all done for you; you just idle.
-    There are no set classes; you can name your character anything you like, and
-    have its class be anything you like, as well.</p>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Game Info</h1>
+        <p>The Idle RPG is just what it sounds like: an RPG in which the players
+        idle. In addition to merely gaining levels, players can find items and
+        battle other players. However, this is all done for you; you just idle.
+        There are no set classes; you can name your character anything you like, and
+        have its class be anything you like, as well.</p>
+      </div>
+    </div>
 
     <h2>Location</h2>
     <p> 
