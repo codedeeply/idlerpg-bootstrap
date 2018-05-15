@@ -9,41 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <a class="navbar-brand" href="index.php">IdleRPG</a>
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php">Game Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="players.php">Player Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="worldmap.php">World Map</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="quest.php">Quest Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">IdleRPG</a>
+          </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <a class="navbar-brand" href="index.php">IdleRPG</a>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.php">Game Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="players.php">Player Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="worldmap.php">World Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="quest.php">Quest Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="http://idlerpg.net/source.php">Source</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
+              </li>
+            </ul>
+          </div>
 
 <?php
     /*$topbarurl = array(
