@@ -38,7 +38,7 @@
     usort($file,$_GET['sort']);
 ?>
   <div class="table-responsive">
-    <table class="table table-striped col-sm-12 table-bordered table-condensed" rows="<?php print count($file); ?>">
+    <table class="dblisting table table-striped col-sm-12 table-bordered table-condensed" rows="<?php print count($file); ?>">
       <tr>
         <th NOWRAP>
           User
