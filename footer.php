@@ -1,4 +1,4 @@
-    </div>
+    </main>
     <footer class="footer">
         Questions? Comments? Suggestions? Bugs? Naked pics?
         <!--<a href="contact.php">Send an email</a> or --><?php print $admin_nick?>@IRC.
