@@ -37,7 +37,8 @@
         ($_GET['sort'] != "cmp_sum_desc"))) $_GET['sort'] = "cmp_level_desc";
     usort($file,$_GET['sort']);
 ?>
-    <table border=1 cellpadding=2 cellspacing=2 cols="32" rows="<?php print count($file); ?>">
+  <div class="table-responsive">
+    <table class="table table-striped" <?/*border=1 cellpadding=2 cellspacing=2 cols="32"*/?> rows="<?php print count($file); ?>">
       <tr>
         <th NOWRAP>
           User
