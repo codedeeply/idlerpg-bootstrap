@@ -38,13 +38,13 @@
                   <li <?php echo ($current_url == "index.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="index.php">Game Info</a>
                   </li>
-                  <li class="nav-item">
+                  <li <?php echo ($current_url == "players.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="players.php">Player Info</a>
                   </li>
-                  <li class="nav-item">
+                  <li <?php echo ($current_url == "worldmap.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="worldmap.php">World Map</a>
                   </li>
-                  <li class="nav-item">
+                  <li <?php echo ($current_url == "quest.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="quest.php">Quest Info</a>
                   </li>
                   <li class="nav-item">
