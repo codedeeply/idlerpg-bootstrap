@@ -31,22 +31,24 @@
           $active = "class=\"active\"";
         ?>
 
+
+
         <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li class="nav-item" <?php echo ($current_url == "index.php") ? $active : ''?>>
                     <a class="nav-link" href="index.php">Game Info</a>
                   </li>
-                  <li class="nav-item" <?php echo ($current_url == "players.php") ? $active : ''?>>
+                  <li class="nav-item">
                     <a class="nav-link" href="players.php">Player Info</a>
                   </li>
-                  <li class="nav-item" <?php echo ($current_url == "worldmap.php") ? $active : ''?>>
+                  <li class="nav-item">
                     <a class="nav-link" href="worldmap.php">World Map</a>
                   </li>
-                  <li class="nav-item" <?php echo ($current_url == "quest.php") ? $active : ''?>>
+                  <li class="nav-item">
                     <a class="nav-link" href="quest.php">Quest Info</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://idlerpg.net/source.php">Source</a>
+                    <a class="nav-link"  href="http://idlerpg.net/source.php">Source</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://github.com/codedeeply/idlerpg-bootstrap">Site Source</a>
