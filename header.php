@@ -35,7 +35,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li class="nav-item" <?php echo ($current_url == "index.php") ? $active : ''?>>
+                  <li <?php echo ($current_url == "index.php") ? $active : ''?> class="nav-item">
                     <a class="nav-link" href="index.php">Game Info</a>
                   </li>
                   <li class="nav-item">
