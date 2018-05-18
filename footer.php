@@ -1,5 +1,5 @@
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <p>Questions? Comments? Suggestions? Bugs? Naked pics?
         <?php print $admin_nick?>@IRC.
@@ -30,7 +30,7 @@
         ?>
         </p>
       </div>
-    </footer>-->
+    </footer>
     <script language="javascript" src="script.js"></script>
   </body>
 </html>
