@@ -15,13 +15,13 @@ $irpg_chan="#irpg";
 // full or relative pathname to the DBs:
 
 // character database
-$irpg_db="/home/stlain/idlerpg/irpg.db";
+$irpg_db="/srv/idlerpg/irpg.db";
 
 // time modifiers file
-$irpg_mod="/home/stlain/idlerpg/modifiers.txt";
+$irpg_mod="/srv/idlerpg/modifiers.txt";
 
 // active quest info file
-$irpg_qfile="/home/stlain/idlerpg/questinfo.txt";
+$irpg_qfile="/srv/idlerpg/questinfo.txt";
 
 // image to use for the top logo
 $irpg_logo="idlerpg.png";
